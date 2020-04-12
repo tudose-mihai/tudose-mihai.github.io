@@ -1,0 +1,169 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+#main {
+    width: 100%;
+}
+
+
+nav {
+    background-color: black;
+    width: 100%;
+}
+
+ul {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    align-items: center;
+}
+
+li {
+    color: white;
+    font-size: x-large;
+    padding: 13px;
+    margin: 13px;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    text-decoration: none;
+    color: #ffffff;
+    border: white 1px solid;
+    padding: 8px;
+}
+
+nav a {
+    border: white 1px solid;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px;
+}
+
+img{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+section {
+
+    padding-left: 4%;
+    padding-top: 1%;
+}
+
+section h1{
+    font-size: xx-large;
+}
+article{
+    width:70%;
+}
+
+a{
+    color: black;
+    text-decoration: underline}
+
+.ghidMeniu{
+    position:fixed;
+    right: 0px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+aside h1{
+    font-size: xx-large;
+    text-align: center;
+}
+aside ul{
+    display: flex;
+    flex-direction: column;
+}
+aside ul li{
+    padding:0px;
+}
+aside ul li a{
+
+    color: firebrick;
+    padding: 0px;
+}
+
+.comparatie{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+figure{
+    text-align: center;
+    font-weight: 900;
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+
+#insta {
+    width: 63px;
+    height: 63px;
+    padding: 15px;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .ghidMeniu{
+        display: none;
+    }
+    *{
+        font-size: x-large;
+    }
+    article{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    article *{
+      text-align: center;
+    }
+    img{
+        height: 420px;
+    }
+}
+
+@media only screen and (max-device-width: 1200px) {
+
+    *{
+        font-size: large;
+    }
+    article{
+        padding-right: 10%;
+    }
+    article *{
+        text-align: center;
+    }
+    img{
+        height: 340px;
+    }
+}
